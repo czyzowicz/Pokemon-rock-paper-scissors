@@ -105,11 +105,11 @@ public class Pokemon_Charmander_Squirtle_Bulbasaur {
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             } else if (choiseUser - choiseComputer == -2) {
                 resultUser += 1;
-                System.out.println("You win! Your Pokemon type is supperior! Congratulations!");
+                System.out.println("You win! Your Pokemon type is superior! Congratulations!");
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             } else if (choiseUser - choiseComputer == 1) {
                 resultUser += 1;
-                System.out.println("You win! Your Pokemon type is supperior! Congratulations!");
+                System.out.println("You win! Your Pokemon type is superior! Congratulations!");
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             } else {
                 resultComputer += 1;
@@ -182,17 +182,17 @@ public class Pokemon_Charmander_Squirtle_Bulbasaur {
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "= " + resultFirstPlayer + " Wygrane " + nameSecondPlayer + " = " + resultSecondPlayer);
             } else if (choiseFirstPlayer - choiseSecondPlayer == -2) {
                 resultFirstPlayer += 1;
-                System.out.println(nameFirstPlayer + " You win! Your Pokemon type is supperior! Congratulations!");
+                System.out.println(nameFirstPlayer + " You win! Your Pokemon type is superior! Congratulations!");
                 System.out.println(nameSecondPlayer +" Unfortunately you lost! Your Pokemon type is inferior! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             } else if (choiseFirstPlayer - choiseSecondPlayer == 1) {
                 resultFirstPlayer += 1;
-                System.out.println(nameFirstPlayer + " You win! Your Pokemon type is supperior! Congratulations!");
+                System.out.println(nameFirstPlayer + " You win! Your Pokemon type is superior! Congratulations!");
                 System.out.println(nameSecondPlayer +" Unfortunately you lost! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             } else {
                 resultSecondPlayer += 1;
-                System.out.println(nameSecondPlayer + " You win! Your Pokemon type is supperior! Congratulations!");
+                System.out.println(nameSecondPlayer + " You win! Your Pokemon type is superior! Congratulations!");
                 System.out.println(nameFirstPlayer + " Unfortunately you lost! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + "" + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             }
