@@ -1,11 +1,11 @@
-package com.nauka.Kamien_Papier_Nozyce_3;
+package com.nauka.Pokemon_Charmander_Squirtle_Bulbasaur;
 
 import java.util.Random;
 import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
 
-public class Kamien_Papier_Nozyce_3_eng {
+public class Pokemon_Charmander_Squirtle_Bulbasaur {
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -18,7 +18,7 @@ public class Kamien_Papier_Nozyce_3_eng {
         int choice = 0;
         while (!quit) {
             System.out.println("=========================================");
-            System.out.println("Welcome in game \"Rock, paper, scissors\".");
+            System.out.println("Welcome in game \"Charmander, Squirtle, Bulbasaur with your favourite Pokemon\".");
             System.out.println("=========================================");
             dontMove();
 
@@ -70,14 +70,14 @@ public class Kamien_Papier_Nozyce_3_eng {
 
         while ((resultUser < finalResult) && (resultComputer < finalResult)) {
             System.out.println("\n");
-            System.out.println("Choose: Rock (choose 1), Paper (choose 2), Scissors (choose 3) or return to the main menu (choose 4).");
+            System.out.println("Choose: Charmander (choose 1), Squirtle (choose 2), Bulbasaur (choose 3) or return to the main menu (choose 4).");
             int choiseUser = input.nextInt();
             if (choiseUser == 1) {
-                System.out.println("Rock");
+                System.out.println("Charmander");
             } else if (choiseUser == 2) {
-                System.out.println("Paper");
+                System.out.println("Squirtle");
             } else if (choiseUser == 3) {
-                System.out.println("Scissors");
+                System.out.println("Bulbasaur");
             } else if (choiseUser == 4){
                 menu();
             }
@@ -88,11 +88,11 @@ public class Kamien_Papier_Nozyce_3_eng {
             System.out.println("Computer choice: ");
             dontMove();
             if (choiseComputer == 1) {
-                System.out.println("Rock");
+                System.out.println("Charmander");
             } else if (choiseComputer == 2) {
-                System.out.println("Paper");
+                System.out.println("Squirtle");
             } else if (choiseComputer == 3) {
-                System.out.println("Scissors");
+                System.out.println("Bulbasaur");
             }
             System.out.println("\n");
             System.out.println("=========================================");
@@ -105,15 +105,15 @@ public class Kamien_Papier_Nozyce_3_eng {
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             } else if (choiseUser - choiseComputer == -2) {
                 resultUser += 1;
-                System.out.println("You win! Congratulations!");
+                System.out.println("You win! Your Pokemon type is supperior! Congratulations!");
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             } else if (choiseUser - choiseComputer == 1) {
                 resultUser += 1;
-                System.out.println("You win! Congratulations!");
+                System.out.println("You win! Your Pokemon type is supperior! Congratulations!");
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             } else {
                 resultComputer += 1;
-                System.out.println("Unfortunately you lost! Maybe next time will be better!");
+                System.out.println("Unfortunately you lost! Your Pokemon type is inferior! Maybe next time will be better!");
                 System.out.println("Result: " + "Draw = " + resultDraw + " Player score = " + resultUser + " Computer score = " + resultComputer);
             }
             System.out.println("\n");
@@ -148,26 +148,26 @@ public class Kamien_Papier_Nozyce_3_eng {
 
         while ((resultFirstPlayer < finalResult) && (resultSecondPlayer < finalResult)) {
             System.out.println("\n");
-            System.out.println(nameFirstPlayer +" Choose: Rock (choose 1), Paper (choose 2), Scissors (choose 3) or return to the main menu (choose 4).");
+            System.out.println(nameFirstPlayer +" Choose: Charmander (choose 1), Squirtle (choose 2), Bulbasaur (choose 3) or return to the main menu (choose 4).");
             int choiseFirstPlayer = input.nextInt();
             if (choiseFirstPlayer == 1) {
-                System.out.println("Rock");
+                System.out.println("Charmander");
             } else if (choiseFirstPlayer == 2) {
-                System.out.println("Paper");
+                System.out.println("Squirtle");
             } else if (choiseFirstPlayer == 3) {
-                System.out.println("Scissors");
+                System.out.println("Bulbasaur");
             } else if (choiseFirstPlayer == 4){
                 menu();
             }
             System.out.println("\n");
-            System.out.println(nameSecondPlayer +" Choose: Rock (choose 1), Paper (choose 2), Scissors (choose 3) or return to the main menu (choose 4).");
+            System.out.println(nameSecondPlayer +" Choose: Charmander (choose 1), Squirtle (choose 2), Bulbasaur (choose 3) or return to the main menu (choose 4).");
             int choiseSecondPlayer = input.nextInt();
             if (choiseSecondPlayer == 1) {
-                System.out.println("Rock");
+                System.out.println("Charmander");
             } else if (choiseSecondPlayer == 2) {
-                System.out.println("Paper");
+                System.out.println("Squirtle");
             } else if (choiseSecondPlayer == 3) {
-                System.out.println("Scissors");
+                System.out.println("Bulbasaur");
             } else if (choiseSecondPlayer == 4){
                 menu();
             }
@@ -182,17 +182,17 @@ public class Kamien_Papier_Nozyce_3_eng {
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "= " + resultFirstPlayer + " Wygrane " + nameSecondPlayer + " = " + resultSecondPlayer);
             } else if (choiseFirstPlayer - choiseSecondPlayer == -2) {
                 resultFirstPlayer += 1;
-                System.out.println(nameFirstPlayer + " You win! Congratulations!");
-                System.out.println(nameSecondPlayer +" Unfortunately you lost! Maybe next time will be better!");
+                System.out.println(nameFirstPlayer + " You win! Your Pokemon type is supperior! Congratulations!");
+                System.out.println(nameSecondPlayer +" Unfortunately you lost! Your Pokemon type is inferior! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             } else if (choiseFirstPlayer - choiseSecondPlayer == 1) {
                 resultFirstPlayer += 1;
-                System.out.println(nameFirstPlayer + " You win! Congratulations!");
+                System.out.println(nameFirstPlayer + " You win! Your Pokemon type is supperior! Congratulations!");
                 System.out.println(nameSecondPlayer +" Unfortunately you lost! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             } else {
                 resultSecondPlayer += 1;
-                System.out.println(nameSecondPlayer + " You win! Congratulations!");
+                System.out.println(nameSecondPlayer + " You win! Your Pokemon type is supperior! Congratulations!");
                 System.out.println(nameFirstPlayer + " Unfortunately you lost! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + "" + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             }
