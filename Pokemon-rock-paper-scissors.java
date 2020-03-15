@@ -188,12 +188,12 @@ public class Pokemon_Charmander_Squirtle_Bulbasaur {
             } else if (choiseFirstPlayer - choiseSecondPlayer == 1) {
                 resultFirstPlayer += 1;
                 System.out.println(nameFirstPlayer + " You win! Your Pokemon type is superior! Congratulations!");
-                System.out.println(nameSecondPlayer +" Unfortunately you lost! Maybe next time will be better!");
+                System.out.println(nameSecondPlayer +" Unfortunately you lost! Your Pokemon type is inferior! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + " " + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             } else {
                 resultSecondPlayer += 1;
                 System.out.println(nameSecondPlayer + " You win! Your Pokemon type is superior! Congratulations!");
-                System.out.println(nameFirstPlayer + " Unfortunately you lost! Maybe next time will be better!");
+                System.out.println(nameFirstPlayer + " Unfortunately you lost! Your Pokemon type is inferior! Maybe next time will be better!");
                 System.out.println("Result: " + " Draw = " + resultDraw + "" + nameFirstPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer + "" + nameSecondPlayer + "'s" + " winnigs " + "= " + resultSecondPlayer);
             }
             System.out.println("\n");
